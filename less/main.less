@@ -1,0 +1,305 @@
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    header {
+        width:100%;
+    }
+    #home {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../images/landing-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        border-bottom: 2px solid @Gigas;
+        margin-top: 2%;
+        .home-container {
+            margin: 2% 0 2% 0;
+            background: white;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            width: 50%;
+            box-shadow:0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+
+            .image-container {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                background: rgb(72, 58, 148);
+                @media @mobile {
+                    width: 100%;
+                }
+                @media @tablet {
+                    width: 100%;
+                }
+
+                img {
+                    width:75%;
+                    height: 75%;
+                    margin-top: 2%;
+                    @media @mobile {
+                        width: 80%;
+                        height: 85%;
+                    }
+                    @media @tablet {
+                        width: 90%;
+                    }
+                }
+                p {
+                    font-size: 1.5rem;
+                    color: white;
+                    text-align: center;
+                    margin:2% 0 2% 0;
+                }
+            }
+            .text-container {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-flow: column wrap;
+                @media @mobile {
+                    width: 100%;
+                }
+                @media @tablet {
+                    width: 100%;
+                }
+                h1 {
+                    font-size: 1.8rem;
+                    text-align: center;
+                    margin-top: 10%;
+                    margin-bottom: 3%;
+                }
+                p {
+                    font-size: 1.3rem;
+                    text-align: center;
+                }
+                a {
+                    text-decoration: none;
+                    align-self: center;
+                    color: @Gunmetal;
+                    padding: 5px 10px 5px 10px;
+                    border: 2px solid @Gigas;
+                    border-radius: 15px;
+                    margin-top: 10%;
+                    @media @mobile {
+                        margin-bottom: 3%;
+                    }
+                    @media @tablet {
+                        margin-bottom: 3%;
+                    }
+                    &:hover {
+                        background: @Gigas;
+                        color: white;
+                        transition: .6s all linear;
+                    }
+                }
+            }
+        
+        }
+    }
+    .features {
+        .sections();
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: rgba(166, 209, 254, .3);
+        @media @mobile {
+            flex-flow: column wrap;
+
+        }
+        .features-text {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            @media @mobile {
+                margin-bottom: 5%;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            p {
+                margin-top: 2%;
+                font-size: 1.3rem;
+            }
+            button {
+                background: white;
+                border-radius: 8px;
+                padding: .4% .6%;
+                border: 2px solid @Gigas;
+                margin-top: 3%;
+                &:hover {
+                    background: @Gigas;
+                    color: white;
+                    transition: .3s all linear;
+                }
+                @media @mobile {
+                    display: none;
+                }
+                @media @tablet {
+                    display: none;
+                }
+            }   
+        }
+        .features-image {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 50%;
+            @media @mobile {
+                width: 100%;
+                margin-bottom: 5%;
+            }
+            @media @tablet {
+                width:  100%;
+                margin-bottom: 5%;
+            }
+            .app-image {
+            width: 50%;
+            display: none;
+            margin: 2% 0 2% 0;
+                @media @mobile {
+                display: block;
+                width: 90%;
+                }
+                @media @tablet {
+                    display: block;
+                    width: 90%;
+                }
+                &:first-child {
+                display: block;
+                }
+            }
+            .displayImage {
+                display: block;
+                margin: 2% 0 2% 0;
+            }
+            .app-list {
+            display: none;
+
+                @media @mobile {
+                display: block;
+                font-size: 1.3rem;
+                text-align:left;
+                width: 100%;
+                }
+                @media @tablet {
+                    display: block;
+                    font-size: 1.3rem;
+                    text-align:center;
+                    width: 100%;
+                }
+                li {
+                margin-top: 5%;
+                    
+                }
+            }
+            .displayList {
+            display: block;
+            font-size: 1.3rem;
+            margin-bottom: 1%;
+            width: 45%;
+            text-align: left;
+            margin-left: 2%;
+            }
+            
+        }
+    }
+    .about-us {
+        background: rgba(0, 216, 129, 0.2);
+        text-align: center;
+        width: 100%;
+        h2 {
+            font-size: 2rem;
+            margin-top: 5%;
+
+            @media @mobile {
+                margin-bottom: 5%;
+            }
+        }
+        p {
+            font-size: 1.3rem;
+            margin-top: 1%;
+        }
+        // button {
+        //     background: @Gigas;
+        //     border: 2px solid @Gigas;
+        //     border-radius: 8px;
+        //     padding:.3% .5%;
+        //     color:white;
+        //     margin-bottom: 2%;
+        //     margin-top: 2%;
+        //     &:hover {
+        //         background: white;
+        //         color:black;
+        //         transition: .3s all linear;
+
+        //     }
+        //     @media @mobile {
+        //         display: none;
+        //     }
+        
+        h3 {
+        font-size: 1.3rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        }
+        
+        .about-us-text {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-flow: row wrap;
+            img {
+                border-radius: 50%;
+            }
+            h4 {
+                font-size: 1.4rem;
+            }
+            a {
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: black;
+            }
+            @media @mobile {
+                flex-flow: column wrap;
+                margin-top: 5%;
+                justify-content: center;
+                img {
+                    border-radius: 50%;
+                }
+                h4 {
+                    margin-top: 5%;
+                    font-size: 1.6rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                    margin-bottom: 2%;
+                }
+
+            }
+            @media @tablet {
+                flex-flow: column wrap;
+                margin-top: 5%;
+                justify-content: center;
+            }
+        }
+    }
+    footer {
+        text-align: center;
+        background: @Gigas;
+        color: white;
+    }
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conjugator</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <img src='./images/logo_transparent.png'>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about-us">About</a>
+        <a href="https://enigmatic-ocean-49872.herokuapp.com/login">Login</a>
+      </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-container">
+            <div class="image-container">
+                <img src="images/logo_transparent.png" alt="Conjugator logo">
+                <p>The perfect conjugation quiz</p>
+            </div>
+            <div class="text-container">
+                <h1>Welcome to Conjugator!</h1>
+                <p>Learning conjugations made simple</p>
+                <a href="https://enigmatic-ocean-49872.herokuapp.com/login">Login/Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="features-text">
+            <h2>Features</h2>
+            <p>An online quiz to help students learn conjugations</p>
+            <button class="featureButton" onclick="featureToggle()">Learn More</button>
+        </div>
+        <div class="features-image">
+          <img class="app-image" src="images/app.png" alt="Image of conjugator website">
+          <ul class="app-list">
+            <li>Practice conjugating verbs in 12 tenses.</li>
+            <li>Keep track of your current and best streaks.</li>
+            <li>Learn sentence structure and grammar.</li>
+            <li>Multiple difficulty settings for students of all levels.</li>
+          </ul>
+          <img class="app-image" src="images/graph.PNG" alt="graph with data">
+          <ul class="app-list">
+            <li>Track your learning progress for the week, month, or year</li>
+          </ul>
+          <img class="app-image" src="images/percentage.PNG" alt="chart with data">
+          <ul class="app-list">
+            <li>Easily track which tenses you know best</li>
+          </ul>
+        </div>
+    </section>
+
+    <section id="about-us" class="about-us">
+      <h2>About Us</h2>
+      <p> Conjugator was built to help students from various levels learn conjugations easier, with the main goal of helping make you a professional at Spanish.</p>
+      <!-- <button class="aboutButton" onclick="toggleAbout()">Contributers</button> -->
+      <h3>Contributers:</h3>
+        <div class="about-us-text">
+          <div class="daniel">
+            <img src="images/dan.jpg">
+            <h4>Daniel Martin</h4>
+            <p>UI Developer</p>
+            <a href="https://github.com/ohfr">Github</a>
+          </div>
+          <div class="farjad">
+            <img src="images/farjad.jpeg">
+            <h4>Farjad Fazli</h4>
+            <p>UI Developer</p>
+            <a href="https://github.com/farjadfazli">Github</a>
+          </div>
+          <div class="matheus">
+            <img src="images/matheus.jpeg">
+            <h4>Matheus Silva</h4>
+            <p>Front-End Developer</p>
+            <a href="https://github.com/heuzin">Github</a>
+          </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright Conjugator 2019</p>
+    </footer>
+
+  </div>
+  <script src="./Javascript/index.js"></script>
+</body>
+</html>
